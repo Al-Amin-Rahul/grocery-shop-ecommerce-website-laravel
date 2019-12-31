@@ -28,10 +28,22 @@
                     </div>
 
                     <div class="form-group row">
-                    <label class="control-label col-sm-2" for="category_description">Description:</label>
-                    <div class="col-sm-10">
-                    <textarea class="form-control" name="category_description" rows="4" style="resize: vertical"></textarea>
+                        <label class="control-label col-sm-2" for="category_description">Description:</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" name="category_description" rows="4" style="resize: vertical"></textarea>
+                        </div>
                     </div>
+
+                    <div class="form-group row">
+                        <label class="control-label col-sm-2" for="parent_id">Parent</label>
+                        <div class="col-sm-10">
+                            <select class="form-control"  name="parent_id" required>
+                                <option value="0">Parent</option>
+                                @foreach($categories as $category)
+                                    <option value="{{$category->id}}">{{$category->category_name}}</option>
+                                @endforeach
+                            </select>
+                        </div>
                     </div>
 
                     <div class="form-group row">

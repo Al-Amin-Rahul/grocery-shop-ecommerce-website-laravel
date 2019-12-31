@@ -15,12 +15,17 @@ class EcommerceController extends Controller
                                 ->orderBy('id','desc')
                                 ->get();
 
-        $categories =   Category::where('publication_status',1)
-                                ->orderBy('id','desc')
-                                ->get();
+//        $categories =   Category::where('publication_status',1)
+//                                ->where('parent_id',0)
+//                                ->orderBy('id','desc')
+//                                ->get();
+//        $sub_categories =   Category::where('publication_status',1)
+//                                ->where('parent_id',)
+//                                ->orderBy('id','desc')
+//                                ->get();
         return view('front.home.home',[
             'products'     =>  $products,
-            'categories'   =>  $categories,
+//            'categories'   =>  $categories,
             'carts'        =>  $carts,
         ]);
     }

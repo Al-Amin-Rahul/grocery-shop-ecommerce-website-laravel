@@ -8,7 +8,10 @@ use Illuminate\Http\Request;
 class CategoryController extends Controller
 {
     public function addCategory(){
-        return view('admin.category.add-category');
+        $categories =   Category::where('parent_id',0)->get();
+        return view('admin.category.add-category',[
+            'categories'   =>  $categories,
+        ]);
     }
     public function manageCategory(){
         $categories =   Category::all();
@@ -18,6 +21,7 @@ class CategoryController extends Controller
         $category   =   new Category();
         $category->category_name    =   $request->category_name;
         $category->category_description    =   $request->category_description;
+        $category->parent_id    =   $request->parent_id;
         $category->publication_status    =   $request->publication_status;
         $category->save();
         return redirect('/add-category')->with('message','Success');

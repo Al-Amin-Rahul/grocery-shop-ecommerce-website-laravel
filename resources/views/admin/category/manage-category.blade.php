@@ -27,6 +27,7 @@
                             <th>Serial NO</th>
                             <th>Name</th>
                             <th>Description</th>
+                            <th>Parent Id</th>
                             <th>Publication Status</th>
                             <th>Action</th>
                         </tr>
@@ -36,6 +37,7 @@
                             <th>Serial NO</th>
                             <th>name</th>
                             <th>Description</th>
+                            <th>Parent Id</th>
                             <th>publication_status</th>
                             <th>Action</th>
                         </tr>
@@ -47,6 +49,7 @@
                                 <td>{{$i++}}</td>
                                 <td>{{$category->category_name}}</td>
                                 <td>{{$category->category_description}}</td>
+                                <td>{{$category->parent_id}}</td>
                                 <td>{{$category->publication_status}}</td>
                                 <td>
 

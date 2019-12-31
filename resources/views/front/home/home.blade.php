@@ -105,9 +105,17 @@
                 <!-- //price range -->
                 <!-- food preference -->
                 <div class="left-side">
-                    <div class="list-group product-catagory sidebar_home">
-                        @foreach($categories as $category)
-                            <a href="{{ route("category", ["id" => $category->id]) }}" class="list-group-item list-group-item-action">{{ $category->category_name }}</a>
+                    <div class="list-group product-catagory sidebar_home ">
+{{--                        @foreach($categories as $category)--}}
+{{--                            <a href="{{ route("category", ["id" => $category->id]) }}" class="list-group-item list-group-item-action" data-toggle="collapse" href="#collapseExample">{{ $category->category_name }}</a>--}}
+{{--                        @endforeach--}}
+                        @foreach(App\Category::orderBy('id','desc')->where('publication_status',1)->where('parent_id',0)->get() as $category)
+                            <a href="#main-{{$category->category_name}}" class="list-group-item list-group-item-action" data-toggle="collapse" >{{ $category->category_name }}</a>
+                            <div class="sub-categories collapse" id="main-{{$category->category_name}}">
+                                @foreach(App\Category::orderBy('id','desc')->where('publication_status',1)->where('parent_id',$category->id)->get() as $sub_categories)
+                                    <a href="" class="list-group-item list-group-item-action " data-toggle="collapse" href="#subCategories">{{ $sub_categories->category_name }}</a>
+                                @endforeach
+                            </div>
                         @endforeach
                     </div>
                 </div>

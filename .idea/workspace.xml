@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8c8efb-7f8b-4c37-8846-8078df036308" name="Default Changelist" comment="" />
+    <list default="true" id="8a8c8efb-7f8b-4c37-8846-8078df036308" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CategoryController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EcommerceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EcommerceController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_10_24_104734_create_categories_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/add-category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/add-category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/category/manage-category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/category/manage-category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/home/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/home/home.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +23,9 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.3">
     <include_path>
@@ -106,7 +119,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1SNGn8HOM5CkHnZhUyMdc8biXdh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../full_stack_3" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -201,10 +216,26 @@
       <workItem from="1574863175755" duration="12000" />
       <workItem from="1574954931494" duration="1068000" />
       <workItem from="1574956184456" duration="612000" />
+      <workItem from="1576498424768" duration="4106000" />
+      <workItem from="1576595894541" duration="2785000" />
+      <workItem from="1577099987550" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

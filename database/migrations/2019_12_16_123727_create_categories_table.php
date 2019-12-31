@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('category_name');
             $table->string('category_description');
+            $table->integer('parent_id');
             $table->tinyInteger('publication_status');
             $table->timestamps();
         });
